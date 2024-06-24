@@ -1,4 +1,4 @@
-const { userModel, createReservedAcct } = require("../Models/User.Model");
+const { userModel, createReservedAcct } = require("../Models/user.model");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
