@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function Account() {
   const navigate = useNavigate();
   useEffect(() => {
-    let url = "http://localhost:5000/client/dashboard";
+    let url = "https://level-project-bank-app.onrender.com/client/dashboard";
     let token = localStorage.getItem("token");
     axios
       .get(url, {
@@ -40,7 +40,7 @@ function Account() {
   const [image, setimage] = useState("");
   const [email, setemail] = useState("");
 
-  let endpoint = "http://localhost:5000/client/upload";
+  let endpoint = "https://level-project-bank-app.onrender.com/client/upload";
 
   const upload = (e) => {
     let file = e.target.files[0];

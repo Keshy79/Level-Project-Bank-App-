@@ -14,7 +14,7 @@ const Signup = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    const URL = 'http://localhost:5000/client/createUser';
+    const URL = 'https://level-project-bank-app.onrender.com/client/createUser';
 
     const formik = useFormik({
         initialValues: {

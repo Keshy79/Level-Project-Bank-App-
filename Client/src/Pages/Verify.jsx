@@ -7,7 +7,7 @@ const Verify = () => {
     const [fetched, setfetched] = useState("")
 
     useEffect(() => {
-      const url = 'http://localhost:5000/client/verify?token=5dGvM4mebtV@gmail.com'
+      const url = 'https://level-project-bank-app.onrender.com/client/verify?token=5dGvM4mebtV@gmail.com'
       axios.get(url)
       .then(res => {
         setfetched(true)

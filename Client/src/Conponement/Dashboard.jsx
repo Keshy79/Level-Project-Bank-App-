@@ -23,7 +23,7 @@ import { TbMoneybag } from "react-icons/tb";
 const Dashboard = () => {
   const navigate = useNavigate();
   const [userData, setUserData] = useState("");
-  let url = "http://localhost:5000/client/dashboard";
+  let url = "https://level-project-bank-app.onrender.com/client/dashboard";
   let token = localStorage.getItem("token");
 
   const fundAcct = () => {

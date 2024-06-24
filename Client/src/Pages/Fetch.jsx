@@ -7,8 +7,8 @@ import axios from 'axios';
 const [lastName, setlastName] = useState("");
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
-let URL = "http://localhost:5000/client/createUser";
-let url = "http://localhost:5000/client/about"
+let URL = "https://level-project-bank-app.onrender.com/client/createUser";
+let url = "https://level-project-bank-app.onrender.com/client/about"
 const handleSubmit = (e) => {
     e.preventDefault();
     alert("Data sent successfully");

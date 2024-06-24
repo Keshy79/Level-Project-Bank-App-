@@ -7,7 +7,7 @@ const Fundacct = () => {
     const [user, setuser] = useState("")
     const [account, setaccount] = useState("")
     const [bvnOrNin, setbvnOrNin] = useState("")
-    let url = "http://localhost:5000/client/dashboard";
+    let url = "https://level-project-bank-app.onrender.com/client/dashboard";
     let token = localStorage.getItem("token");
     const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const Fundacct = () => {
     }, []);
 
     const getAccount = (email) => {
-        const url = 'http://localhost:5000/client/get_account'
+        const url = 'https://level-project-bank-app.onrender.com/client/get_account'
         axios.post(url, { clientEmail: email })
             .then((res) => {
                 console.log(res);
@@ -52,7 +52,7 @@ const Fundacct = () => {
     }
 
     const createAccount = () => {
-        const url = 'http://localhost:5000/client/monnify'
+        const url = 'https://level-project-bank-app.onrender.com/client/monnify'
         let data = {
             accountReference: `Kash_MFY_${generateAccountNumber()}`,
             accountName: `${user.firstName} ${user.lastName}`,

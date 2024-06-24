@@ -28,7 +28,7 @@ const Forgotten = () => {
       return errors;
     },
   onSubmit: (values) =>{
-    const url = "http://localhost:5000/client/reset_password";
+    const url = "https://level-project-bank-app.onrender.com/client/reset_password";
     console.log(values);
     axios.post(url, values)
     .then((res)=>{
